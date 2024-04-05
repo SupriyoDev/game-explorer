@@ -15,7 +15,7 @@ const SearchBox = () => {
 					ref={ref}
 					type='text'
 					placeholder='search here....'
-					className='w-[600px] h-10 px-4 rounded-md focus:outline-none focus:ring focus:ring-slate-500 text-lg'
+					className='lg:w-[600px] w-[220px] h-10 px-4 rounded-md focus:outline-none focus:ring focus:ring-slate-500 text-lg'
 				/>
 			</form>
 		</div>
