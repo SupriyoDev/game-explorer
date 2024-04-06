@@ -11,7 +11,7 @@ const NavBar = ({ onSearch }: Props) => {
 				<img src={logo} alt='Logo' className='h-12 w-12 rounded-full' />
 				<SearchBox onSearchText={onSearch} />
 			</div>
-			<div className='bg-slate-600 text-lg lg:block hidden active:bg-yellow-400 active:text-slate-600 font-semibold text-white hover:text-yellow-400 px-3 py-2 rounded-md'>
+			<div className='bg-slate-600 hover:bg-slate-800 text-lg lg:block hidden active:bg-yellow-400 active:text-slate-600 font-semibold text-white hover:text-yellow-400 px-3 py-2 rounded-md'>
 				@ProCoder
 			</div>
 		</div>

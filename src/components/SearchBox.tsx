@@ -25,7 +25,7 @@ const SearchBox = ({ onSearchText }: Props) => {
 					/>
 					<button
 						type='submit'
-						className='bg-slate-600 text-white ml-2 w-20 h-10 hover:text-yellow-400 hover:bg-slate-800 rounded-md text-lg text-pretty'
+						className='bg-slate-600 font-semibold focus:ring focus:outline-none focus:ring-yellow-400 text-white ml-2 w-20 h-10 hover:text-yellow-400 hover:bg-slate-800 rounded-md text-lg text-pretty'
 					>
 						Search
 					</button>
