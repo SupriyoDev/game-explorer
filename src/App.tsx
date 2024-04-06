@@ -9,6 +9,7 @@ import { Platform } from './hooks/useGames';
 interface GameQuery {
 	genre: Genre | null;
 	platform: Platform | null;
+	search: string | null;
 }
 
 const App = () => {
@@ -17,7 +18,11 @@ const App = () => {
 	return (
 		<div className='grid grid-cols-8 bg-slate-800'>
 			<div className='col-span-8 bg-slate-400 py-2 px-4 mb-5'>
-				<NavBar />
+				<NavBar
+					onSearch={(searchText) =>
+						setGameQuery({ ...gameQuery, search: searchText })
+					}
+				/>
 			</div>
 			<div className=' hidden lg:block lg:col-span-1 p-2 '>
 				<GenreList
@@ -37,6 +42,7 @@ const App = () => {
 				<GameGrid
 					selectedGenre={gameQuery.genre}
 					selectedPlatform={gameQuery.platform}
+					search={gameQuery.search}
 				/>
 			</div>
 		</div>

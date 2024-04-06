@@ -17,7 +17,8 @@ export interface Game {
 
 const useGames = (
 	selectedGenre: Genre | null,
-	selectedPlatform: Platform | null
+	selectedPlatform: Platform | null,
+	search: string | null
 ) =>
 	useData<Game>(
 		'/games',
@@ -25,10 +26,11 @@ const useGames = (
 			params: {
 				genres: selectedGenre?.id,
 				platforms: selectedPlatform?.id,
+				search: search,
 			},
 		},
 
-		[selectedGenre?.id, selectedPlatform?.id]
+		[selectedGenre?.id, selectedPlatform?.id, search]
 	);
 
 export default useGames;
