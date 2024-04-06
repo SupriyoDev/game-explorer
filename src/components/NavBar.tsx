@@ -7,7 +7,7 @@ interface Props {
 const NavBar = ({ onSearch }: Props) => {
 	return (
 		<div className=' flex justify-between items-center'>
-			<div className='flex justify-between items-center lg:space-x-20 space-x-4 '>
+			<div className='flex justify-between items-center md:space-x-20 space-x-4'>
 				<img src={logo} alt='Logo' className='h-12 w-12 rounded-full' />
 				<SearchBox onSearchText={onSearch} />
 			</div>

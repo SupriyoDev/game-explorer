@@ -21,11 +21,11 @@ const SearchBox = ({ onSearchText }: Props) => {
 						ref={ref}
 						type='text'
 						placeholder='search here....'
-						className='md:w-[600px] w-[220px] h-10 px-4 rounded-md focus:outline-none focus:ring focus:ring-slate-500 text-lg'
+						className='sm:w-[360px] md:w-[500px] w-[200px] h-10 px-4 rounded-md focus:outline-none focus:ring focus:ring-slate-500 text-lg'
 					/>
 					<button
 						type='submit'
-						className='bg-slate-600 text-white ml-2 w-24 h-10 hover:text-yellow-400 hover:bg-slate-800 rounded-md text-lg text-pretty'
+						className='bg-slate-600 text-white ml-2 w-20 h-10 hover:text-yellow-400 hover:bg-slate-800 rounded-md text-lg text-pretty'
 					>
 						Search
 					</button>
